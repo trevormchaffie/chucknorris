@@ -1,9 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Quote from "./Quote";
 
 function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Random Quote Generator</h1>
+        <Quote />
+      </header>
+    </div>
+  );
+}
+
+/* function App() {
   const [count, setCount] = useState(0)
 
   return (
@@ -30,6 +42,6 @@ function App() {
       </p>
     </>
   )
-}
+} */
 
-export default App
+export default App;
